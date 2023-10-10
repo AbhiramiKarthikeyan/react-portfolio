@@ -1,0 +1,23 @@
+
+  .image {
+    position: relative;
+    z-index: 1; /* Set a higher z-index for the container to appear in front */
+  }
+.image img {
+    width: 80%;
+    margin-left: 10%;
+
+    cursor: pointer;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+ 
